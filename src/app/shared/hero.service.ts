@@ -35,9 +35,8 @@ export class HeroService {
     return this.http.put(url, hero, httpOptions);
   }
 
-  deleteHero(hero: Hero | Number): Observable<Hero> {
-    const id = typeof hero === 'number' ? hero : hero.id;
-    const url = `${BASE_URL}/${id}`;
+  deleteHero(hero: Hero): Observable<Hero> {
+    const url = `${BASE_URL}/${hero.id}`;
 
     return this.http.delete<Hero>(url, httpOptions);
   }
