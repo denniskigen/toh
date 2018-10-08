@@ -9,21 +9,21 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MessagesComponent } from './messages/messages.component';
+
+import { HeroService } from './shared';
+import { MessageService } from './shared';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    MessagesComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  providers: [ HeroService, MessageService ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
