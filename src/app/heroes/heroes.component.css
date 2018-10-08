@@ -73,5 +73,14 @@ button.delete {
   position: relative;
   left: 194px;
   top: -32px;
-  background-color: gray !important; 
+  background-color: gray !important;
+  color: white;
+}
+
+.newHero {
+  padding: 10px;
+}
+
+.newHero button {
+  margin-left: 5px;
 }
