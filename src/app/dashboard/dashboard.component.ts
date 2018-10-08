@@ -16,6 +16,6 @@ export class DashboardComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes.splice(0, 4));
+    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
 }
