@@ -13,6 +13,7 @@ import { MessagesComponent } from './messages/messages.component';
 
 import { HeroService } from './shared';
 import { MessageService } from './shared';
+import { NotFoundComponent } from './not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MessageService } from './shared';
     HeroesComponent,
     HeroDetailComponent,
     DashboardComponent,
-    MessagesComponent
+    MessagesComponent,
+    NotFoundComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [ HeroService, MessageService ],
