@@ -1,13 +1,10 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <span class="badge">
-      {{ hero.id }}
-    </span>
+    <a routerLink="../profile/{{ hero.id }}">
+      <span class="badge">
+        {{ hero.id }}
+      </span> {{ hero.name }}
+    </a>
   </li>
 </ul>
-
-<div *ngIf="hero">
-  <p>{{ hero | uppercase }} is my hero</p>
-  <button>View profile</button>
-</div>
