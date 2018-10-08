@@ -1,0 +1,15 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name }} details!</h2>
+  <div>
+    <label>id: {{ hero.id }}</label>
+  </div>
+  <div>
+    <label>
+      name:
+      <input type="text">{{ hero.name }}
+    </label>
+  </div>
+  <div class="actions">
+    <button click="back()">Back</button> 
+  </div>
+</div>
